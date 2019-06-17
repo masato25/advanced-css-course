@@ -180,4 +180,5 @@ body {
 
 .btn-animated {
   animation: moveInButtom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
