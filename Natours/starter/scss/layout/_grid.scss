@@ -8,4 +8,12 @@
   }
 
   @include clearfix;
+
+  [class^="col-"] {
+    background: orangered;
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 }
