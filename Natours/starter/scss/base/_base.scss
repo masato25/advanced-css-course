@@ -1,1 +1,19 @@
 // reset style & body
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // default font size is 16px
+  // THis define with 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
