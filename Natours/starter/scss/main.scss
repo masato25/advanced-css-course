@@ -10,8 +10,11 @@ Dark green: #28b485
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-black: #000;
+
 *,
 *::after,
 *::before {
@@ -50,7 +53,7 @@ body {
   clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
@@ -60,7 +63,7 @@ body {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -76,7 +79,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -92,7 +95,7 @@ body {
   */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -158,15 +161,15 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: $color-white;
   color: $color-grey-dark;
 }
@@ -193,7 +196,7 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInButtom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
